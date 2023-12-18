@@ -1,0 +1,178 @@
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 20px;
+  background: #f0f0f0;
+}
+
+.controls {
+  margin-bottom: 20px;
+}
+
+.inner_container {
+  display: flex;
+  width: 100%;
+}
+
+.container {
+  /* width: 70%;
+  height: 60vh; */
+  position: relative;
+  margin: 100px auto;
+  perspective: 1000px; /* Increased perspective for larger box */
+}
+
+.box {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  transform-style: preserve-3d;
+  transition: transform 1s;
+}
+
+.face {
+  position: absolute; /* Increased width */
+  /* Increased height */
+  border: 1px solid #ccc;
+  background: rgba(255, 255, 255, 0.9);
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.front {
+  transform: rotateY(0deg) translateZ(29px);
+  width: 600px;
+  height: 300px;
+  background: rgb(183, 50, 50);
+} /* Adjusted translateZ */
+
+.front img {
+  width: 50%;
+  object-fit: cover;
+}
+.back {
+  transform: rotateY(180deg) translateZ(29px);
+  width: 600px;
+  height: 300px;
+  background: yellow;
+}
+.back img {
+  width: 50%;
+  object-fit: cover;
+}
+.right {
+  transform: rotateY(90deg) translateZ(578px);
+  width: 50px;
+  height: 300px;
+  background: green;
+}
+.left {
+  transform: rotateY(-90deg) translateZ(30px);
+  width: 50px;
+  height: 300px;
+  background: blue;
+}
+.top {
+  transform: rotateX(90deg) translateZ(30px);
+  width: 600px;
+  height: 50px;
+  background: pink;
+}
+.bottom {
+  transform: rotateX(-90deg) translateZ(270px);
+  width: 600px;
+  height: 50px;
+  background: purple;
+}
+
+/* SECOND WALL */
+
+.containers {
+  /* width: 70%;
+  height: 60vh; */
+  position: relative;
+  margin: 100px auto;
+  perspective: 1000px; /* Increased perspective for larger box */
+}
+
+.boxs {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  transform-style: preserve-3d;
+  transition: transform 1s;
+}
+
+.faces {
+  position: absolute; /* Increased width */
+  /* Increased height */
+  border: 1px solid #ccc;
+  background: rgba(255, 255, 255, 0.9);
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.fronts {
+  transform: rotateY(0deg) translateZ(29px);
+  width: 400px;
+  height: 300px;
+  background: red;
+} /* Adjusted translateZ */
+
+.fronts img {
+  width: 50%;
+  object-fit: cover;
+}
+.backs {
+  transform: rotateY(180deg) translateZ(29px);
+  width: 400px;
+  height: 300px;
+  background: yellow;
+}
+.backs img {
+  width: 50%;
+  object-fit: cover;
+}
+.rights {
+  transform: rotateY(90deg) translateZ(380px);
+  width: 50px;
+  height: 300px;
+  background: green;
+}
+.lefts {
+  transform: rotateY(-90deg) translateZ(30px);
+  width: 50px;
+  height: 300px;
+  background: blue;
+}
+.tops {
+  transform: rotateX(90deg) translateZ(30px);
+  width: 400px;
+  height: 50px;
+  background: pink;
+}
+.bottoms {
+  transform: rotateX(-90deg) translateZ(270px);
+  width: 400px;
+  height: 50px;
+  background: purple;
+}
+
+/* MAIN ROOM WALL */
+
+.controls {
+  margin-bottom: 5px;
+}
+.main_container {
+  perspective: 800px; /* Apply perspective here */
+}
+
+.inner_container {
+  transform-style: preserve-3d;
+  transition: transform 1s;
+}
+
